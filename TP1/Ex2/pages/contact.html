@@ -1,0 +1,49 @@
+<!doctype html> 
+<html lang=fr >
+
+<head>
+	<meta charset="utf-8">
+	<title> Contacts </title>
+</head>
+
+<body> 
+
+	<!-- HEADER -->
+	<header>
+		<h1>
+			HTML5
+		</h1>
+		
+		<h2>
+			DI3
+		</h2>
+	</header>
+	<!-- BARRE DE NAVIGATION -->
+	<nav>
+		<a href="index.html" title="Accueil"> Accueil </a>
+		<a href="imagesvideos.html" title="images et vidéos"> Images et vidéos </a>
+		<a href="contact.html" title="Contact"> Contact </a>
+	</nav>
+
+	<section>
+		<form autocomplete="on">
+			<label for="prenom">Prénom : </label><input type="text" id="prenom" name="prenom" placeholder="Prenom" autofocus><br>
+			<label for="nom">Nom : </label><input type="text" id="nom" name="nom" placeholder="Nom"><br>
+			<label for="email">Email : </label><input type="text" id="email" name="email" placeholder="Email" required autocomplete="off"><br>
+			<label for="raison">Raison : </label>
+				<SELECT id="raison" name="Raison">
+					<OPTION VALUE="personnem">Personnel</OPTION>
+					<OPTION VALUE="professionnem">Professionnel</OPTION>
+					<OPTION VALUE="autres">Autres</OPTION>
+				</SELECT>
+			<br>
+			<textarea name="message" placeholder="Votre message ici" rows="4" cols="50"></textarea><br>
+			<input type="reset" name="reset" value="Reset">
+			<input type="submit" name="valider" value="Valider"><br>
+		</form>
+	</section>
+
+
+</body>
+
+</html>

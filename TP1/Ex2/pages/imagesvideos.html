@@ -1,0 +1,89 @@
+<!doctype html> 
+<html lang=fr >
+
+<head>
+	<meta charset="utf-8">
+	<title> Images et vidéos </title>
+</head>
+
+<body> 
+	
+	<!-- HEADER -->
+	<header>
+		<h1>
+			HTML5
+		</h1>
+		
+		<h2>
+			DI3
+		</h2>
+	</header>
+	<!-- BARRE DE NAVIGATION -->
+	<nav>
+		<a href="index.html" title="Accueil"> Accueil </a>
+		<a href="imagesvideos.html" title="images et vidéos"> Images et vidéos </a>
+		<a href="contact.html" title="Contact"> Contact </a>
+	</nav>
+	<section>
+		<table>
+			<tr>
+				<th> Colonne 1 </th>
+				<th> Colonne 2 </th>
+				<th> Colonne 3 </th>
+			</tr>	
+			<tr>
+				<td colspan="2"> 
+					<img src="../images/jung_yong_hwa.jpg" alt="Jung Yong Hwa"/> 
+				</td>
+				
+				<td> 
+					<img src="../images/cnBlueGroupe.jpg" alt="CN Blue"/> 
+				</td>
+			</tr>
+			<tr>
+				<td> 
+					<img src="../images/cnBlueGroupe2.jpg" alt="CN Blue"/> 
+				</td>
+				<td rowspan="2" colspan="2">
+					<figure> 
+						<img src="../images/jungShin.jpg" alt="Jong Shin"/>  
+						<figcaption> Photo de Jong Shin </figcaption> 
+					</figure> 
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					<figure> 
+						<img src="../images/minHyuk.jpg" alt="Min Hyuk"/> 
+						<figcaption> Photo de MinHyuk </figcaption> 
+					</figure>
+				</td>
+				
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<p>
+			<video controls="controls" poster="../images/video_start.png" src="../images/trailer.mp4" > Trailer </video>
+		</p>
+	</section>
+
+	<section>
+		<canvas id="monCanvas"></canvas>
+	</section>
+
+<script>
+	var c=document.getElementById("monCanvas");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+</script>
+
+
+</body>
+
+
+</html>
