@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<title> HTML & Co </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="../documents/date.js"></script>
 </head>
 
-<body class="langage"> 
+<body class="langage" > 
 	<!-- HEADER -->
 	<header>
 		<section id="defilement">
@@ -29,17 +30,23 @@
 		</nav>
 	</header>
 
-	<section class="langage">
-		<p id="flottantL">
+	<section class="langage" id="flottantL">
+		<p >
 			Cliquez sur la lampe pour allumer et éteidre.<br>
-			<img src="../images/bulboff.gif" alt="lampe éteinte">
-		</p>
-
-		<p id="flottantR">
-			Nous sommes le ??, il est ???.<br>
-			Pour changer la mise en page, cliquez sur le bouton : <input type="submit" name="validerCSS" value="Changer CSS"><br>
+			<img src="../images/bulboff.gif" alt="lampe éteinte" id="ampoule" onclick="changeimage()">
 		</p>
 	</section>
+	<section id="flottantR">
+		<p id="date" onload="affichageDate()">
+
+		</p>
+
+		<p >
+			Pour changer la mise en page, cliquez sur le bouton : <input type="submit" name="validerCSS" value="Changer CSS"><br>
+		</p>
+	
+	</section>
+
 
 		<!-- FOOTER -->
 	<footer class="content">
@@ -55,6 +62,8 @@
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
 	</footer>
+	<script src="../documents/changeimage.js"></script>
+	
 </body>
 
 </html>

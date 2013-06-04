@@ -43,12 +43,12 @@ nav.langage{
 	background-color: #20B2AA;
 }
 
-p#flottantL{
+#flottantL{
 	float: left;
 	width: 49%;
 }
 
-p#flottantR{
+#flottantR{
 	float: right;
 	width: 49%;
 }
@@ -148,4 +148,8 @@ nav a:hover{
 
 #lienExterne{
 	width: 10px;
+}
+
+#ampoule{
+	width: 100px;
 }
