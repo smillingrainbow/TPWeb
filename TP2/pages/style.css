@@ -63,7 +63,7 @@ p.titre{
 	margin: 0px;
 }
 
-section.langage{
+section .langage{
 	background-color: #DCDCDC;
 }
 
@@ -71,20 +71,81 @@ nav{
 	background-color: #87CEFA;
 	border-style: solid;
 	border-color: #3CB371;
-	border-width: 2px;
+	border-width: 4px;
+	height: 40px;
 }
 
 footer HR{
 	border-width: 2px;
 }
 
-section#defilement{
-	animation : myfirst 10s infinite;
+#defilement{
+	animation : myfirst 20s infinite;
+	-webkit-animation: myfirst 5s infinite; /* Safari et CHrome*/
+}
+#defilement > p {
+	animation : anim2 5s infinite;
+	-webkit-animation: anim2 10s infinite; /* Safari et Chrome*/
+	width : 10%;
 	position: relative;
 }
 
 @keyframes myfirst
 {
-from {right:100%;}
-to {left:0%;}
+from {background: red;}
+to {background: yellow;}
+}
+
+
+@-webkit-keyframes myfirst /* Safari et Chrome*/
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+
+@keyframes anim2{
+	from{
+		left : 90%;
+	}
+	to{
+		left : 0%;
+	}
+}
+
+@-webkit-keyframes anim2{ /* Safari et Chrome*/
+from{
+		left : 90%;
+	}
+	to{
+		left : 0%;
+	}
+}
+
+nav a:link{
+	padding: 3px;
+	margin : 5px;
+	border : 2px solid;
+	border-top-left-radius:10px;
+	border-bottom-right-radius:10px;
+	display: inline-block; 
+	background-color: black;
+	color: white;
+}
+
+nav a:visited{
+	color: red;
+}
+
+nav a:hover{
+	cursor: pointer;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px; 
+	border-top-left-radius:0px;
+	border-bottom-right-radius:0px;
+	color: yellow;
+}
+
+#lienExterne{
+	width: 10px;
 }
