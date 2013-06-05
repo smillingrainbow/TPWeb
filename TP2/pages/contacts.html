@@ -18,21 +18,22 @@
 		<p class="titre">
 			Prendre contact
 		</p>
-		<nav>
+		
+		<nav> <!--
 			<a href="index.html" title="Accueil"> Accueil </a>
 			<a href="histoire.html" title="Histoire"> Histoire </a>
 			<a href="html.html" title="HTML"> HTML </a>
 			<a href="css.html" title="CSS"> CSS </a>
 			<a href="javascript.html" title="JavaScript"> JavaScript </a>
 			<a href="outils.html" title="Outils"> Outils </a>
-			<a href="contacts.html" title="Contacts"> Contacts </a>
+			<a href="contacts.html" title="Contacts"> Contacts </a> -->
 		</nav>
 	</header>
 
 	<section>
-		<form autocomplete="on">
+		<form autocomplete="on" onsubmit="return validateform()" method="post" name="myForm">
 			<label for="prenom">Prénom : </label><input type="text" id="prenom" name="prenom" placeholder="Prenom" autofocus><br>
-			<label for="nom">Nom : </label><input type="text" id="nom" name="nom" placeholder="Nom"><br>
+			<label for="nom">Nom : </label><input type="text" id="nom" name="nom" placeholder="nom"><br>
 			<label for="email">Email : </label><input type="text" id="email" name="email" placeholder="Email" required autocomplete="off"><br>
 			<label for="raison">Raison : </label>
 				<SELECT id="raison" name="Raison">
@@ -47,8 +48,9 @@
 		</form>
 	</section>
 
+<script src="../documents/piedDePage.js"></script>
 		<!-- FOOTER -->
-	<footer class="piedPage">
+<!--	<footer class="piedPage">
 		<HR>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
     			<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
@@ -60,7 +62,9 @@
 			|
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
-	</footer>
+	</footer> -->
+	<script src="../documents/navigation.js"></script>
+	<script src="../documents/traitementFormulaire.js"></script>
 </body>
 
 </html>
