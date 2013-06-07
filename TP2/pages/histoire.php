@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="outils"> 
+<body id="histoire"> 
 	<!-- HEADER -->
 	<header>
 		<section id="defilement">
@@ -16,10 +16,10 @@
 			</p>
 		</section>
 		<p class="titre">
-			Les outils du developpeur
+			Voici l'histoire des langages HTML et CSS
 		</p>
-		<nav id="outils">
-			
+		<nav id="histoire">
+			<?php include 'navigation.inc'; ?>
 		</nav>
 	</header>
 
@@ -47,7 +47,7 @@
 		</p>
 	</section>
 
-<script src="../documents/piedDePage.js"></script>
+
 		<!-- FOOTER -->
 <!--	<footer class="piedPage">
 		<HR>
@@ -62,7 +62,7 @@
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
 	</footer> -->
-	<script src="../documents/navigation.js"></script>
+	<?php include 'piedDePage.inc'; ?>
 </body>
 
 </html>

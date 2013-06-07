@@ -18,16 +18,10 @@
 		<p class="titre">
 			Prendre contact
 		</p>
+		<nav>
 		<?php include 'navigation.inc'; ?>
-		<nav><!-- 
-			<a href="index.html" title="Accueil"> Accueil </a>
-			<a href="histoire.html" title="Histoire"> Histoire </a>
-			<a href="html.html" title="HTML"> HTML </a>
-			<a href="css.html" title="CSS"> CSS </a>
-			<a href="javascript.html" title="JavaScript"> JavaScript </a>
-			<a href="outils.html" title="Outils"> Outils </a>
-			<a href="contacts.html" title="Contacts"> Contacts </a> -->
-		</nav>
+
+		</nav> 
 	</header>
 
 	<section>

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="outils"> 
+<body class="langage"> 
 	<!-- HEADER -->
 	<header>
 		<section id="defilement">
@@ -16,15 +16,16 @@
 			</p>
 		</section>
 		<p class="titre">
-			Les outils du developpeur
+			Le langage CSS
 		</p>
-		<nav id="outils">
-			
+		<nav class="langage">
+			<?php include 'navigation.inc'; ?>
 		</nav>
 	</header>
 
+
 	<!-- SeCTION -->
-	<section>
+	<section class="langage">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis purus, dictum et pharetra sed, sollicitudin vel quam. Cras nec nisi sit amet orci tincidunt convallis. Curabitur commodo risus eget felis elementum nec sollicitudin erat gravida. Ut eu ipsum massa. Vivamus mattis nibh ut orci luctus venenatis. In pellentesque molestie rutrum. Sed mattis, ante eget mollis adipiscing, leo quam vehicula nunc, ut pretium velit ante at dui. Maecenas scelerisque enim non dolor faucibus viverra. 
 		</p>
@@ -45,9 +46,13 @@
 		<p>
 			Pellentesque ultrices tellus eu velit pellentesque ullamcorper. Donec fringilla bibendum lectus vitae pellentesque. Fusce augue magna, facilisis quis lacinia nec, eleifend in nibh. Donec est quam, aliquet sed varius eu, malesuada vitae orci. Nunc semper nibh et nisl rhoncus tristique. Mauris mollis libero dignissim metus pulvinar nec hendrerit eros rhoncus. Sed lacinia odio quis est pharetra vel tincidunt mauris cursus. 
 		</p>
+		<p>
+			Lien vers le W3school : 
+			<a href="http://www.w3schools.com/"> ici <img src="../images/lienexterne.png" alt="lien externe" id="lienExterne"></a>
+		</p>
 	</section>
 
-<script src="../documents/piedDePage.js"></script>
+
 		<!-- FOOTER -->
 <!--	<footer class="piedPage">
 		<HR>
@@ -62,7 +67,8 @@
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
 	</footer> -->
-	<script src="../documents/navigation.js"></script>
+	<?php include 'piedDePage.inc'; ?>
+
 </body>
 
 </html>

@@ -19,7 +19,7 @@
 			Les outils du developpeur
 		</p>
 		<nav id="outils">
-			
+			<?php include 'navigation.inc'; ?>
 		</nav>
 	</header>
 
@@ -47,7 +47,7 @@
 		</p>
 	</section>
 
-<script src="../documents/piedDePage.js"></script>
+
 		<!-- FOOTER -->
 <!--	<footer class="piedPage">
 		<HR>
@@ -62,7 +62,7 @@
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
 	</footer> -->
-	<script src="../documents/navigation.js"></script>
+	<?php include 'piedDePage.inc'; ?>
 </body>
 
 </html>

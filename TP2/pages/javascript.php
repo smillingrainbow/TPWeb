@@ -20,7 +20,7 @@
 			Bienvenue sur mon site!
 		</p>
 		<nav class="langage">
-
+			<?php include 'navigation.inc'; ?>
 		</nav>
 	</header>
 
@@ -41,7 +41,7 @@
 	
 	</section>
 
-<script src="../documents/piedDePage.js"></script>
+
 		<!-- FOOTER -->
 <!--	<footer class="piedPage">
 		<HR>
@@ -56,7 +56,7 @@
 			<a href="contacts.html" title="Contacts"> Contacts </a>
 		
 	</footer> -->
-	<script src="../documents/navigation.js"></script>
+	<?php include 'piedDePage.inc'; ?>
 	<script src="../documents/changeimage.js"></script>
 	<script src="../documents/date.js"></script>
 	<script src="../documents/changestyle.js"></script>
